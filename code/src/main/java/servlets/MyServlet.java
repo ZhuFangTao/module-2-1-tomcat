@@ -10,7 +10,7 @@ import java.io.IOException;
 public class MyServlet extends HttpServlet {
     @Override
     public void doGet(Request request, Response response) {
-        String content = "<h1>app3 servlet get</h1>";
+        String content = "<h1>app4 servlet get</h1>";
         try {
             response.output((HttpProtocolUtil.getHttpHeader200(content.getBytes().length) + content));
         } catch (IOException e) {
@@ -20,7 +20,7 @@ public class MyServlet extends HttpServlet {
 
     @Override
     public void doPost(Request request, Response response) {
-        String content = "<h1>app3 servlet post</h1>";
+        String content = "<h1>app4 servlet post</h1>";
         try {
             response.output((HttpProtocolUtil.getHttpHeader200(content.getBytes().length) + content));
         } catch (IOException e) {
